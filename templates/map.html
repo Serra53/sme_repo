@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title> Mapa das Escolas de São Paulo</title>
+</head>
+<body>
+        <nav class="nav-extended">
+                <div class="nav-wrapper">
+                  <a href="#" class="center brand-logo">Dashboard SME</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="">Logout</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                      </ul>
+                </div>
+                <div class="nav-wrapper">
+                  <ul class="center hide-on-med-and-down">
+                        <li><a class="waves-effect waves-light btn">Fundamental I</a></li>
+                        <li><a class="waves-effect waves-light btn">Fundamental II</a></li>
+                        <li><a class="waves-effect waves-light btn">Ensino Médio</a></li>
+                </div>
+                <div class="nav-content">
+                  <ul class="tabs tabs-transparent">
+                    <li class="tab"><a id="escolas">Escolas</a></li>
+                    <li class="tab"><a href="">Professores</a></li>
+                    <li class="tab"><a id="udhs">UDHs</a></li>
+                    <li class="tab"><a id="distritos">Distritos</a></li>
+                    <li class="tab"><a >Regiões</a></li>
+                    <li class="tab"><a id="clear">Limpar Mapa</a></li>
+                  </ul>
+                </div>
+        </nav>
+
+    <div class="container indicadores-lista" id="div-lista-indicadores">
+    <label>Indicadores</label>
+      <select class="browser-default" id="lista-indicadores">
+        <option value="" disabled selected>Selecione um Indicador</option>
+        <option value="t_analf18m">Taxa de Analfabetismo para população com 18 anos ou mais</option>
+        <option value="t_fbbas">Taxa de frequência bruta no ensino básico</option>
+        <option value="t_fbfund">Taxa de frequência bruta ao ensino fundamental</option>
+        <option value="t_fbmed">Taxa de frequência bruta ao ensino médio</option>
+        <option value="idhme">Índice de Desenvolvimento Humano - Educação</option>   
+      </select>
+    </div>
+
+    <div id="info-legend" style="display:none"></div>
+
+    <div id="mapid"></div>
+    <div id="overlay" style="display:none"></div>
+    
+
+    <script src="../static/js/script.js"></script>
+
+</body>
+</html>

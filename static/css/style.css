@@ -1,0 +1,62 @@
+
+
+.brand-logo{
+    font-family: Helvetica; 
+}
+
+
+#overlay {
+    position: absolute;
+    width: 20%;
+    height: 70%;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgba(238, 110, 115, 0.9);
+    z-index: 314159;
+    padding: 15px;
+  }
+
+#mapid {
+    position: relative;
+    width: 1600px; 
+    height: 630px; 
+    margin: 0 auto"
+}
+
+.info-escola {
+    font-family: Arial;
+    font-size: 14px;
+    color: white; 
+}
+
+.subinfo-escola {
+    font-size: 14px;
+    font-family: Helvetica;
+
+}
+
+.indicador {
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}
+
+.indicador-secund {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+#div-lista-indicadores {
+    display: none;
+    margin: 5px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+#info-legend {
+    padding: 5px;
+    margin-right:25px;
+}
